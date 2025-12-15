@@ -32,12 +32,12 @@ public class Department {
      * @return True if the name is valid, otherwise false
      */
     public static boolean isDepartmentNameValid(String departmentName) {
-        if (departmentName == null) {
+        if (departmentName == null || departmentName.trim().isEmpty()) {
             return false;
         }
 
         for (char c : departmentName.toCharArray()) {
-            if (!Character.isDigit(c) && c != ' ') {
+            if (!Character.isLetter(c) && c != ' ') {
                 return false;
             }
         }
