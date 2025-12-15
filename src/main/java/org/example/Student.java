@@ -30,10 +30,7 @@ public class Student {
     }
 
     /**
-     * Adds the course to the student's registeredCourses list
-     * Adds the student to the course's registeredStudents list
-     * Appends a null value for the scores of each assignment of the course
-     * If the course already exists in the student's registeredCourses list, return false without adding anything
+     * Register's a course
      * @param course The course to be added
      * @return False if the course is already registered, otherwise true
      */
@@ -67,6 +64,10 @@ public class Student {
         return true;
     }
 
+    /**
+     * Converts a student to a simple string with only the studentId, the studentName, and the departmentName
+     * @return
+     */
     public String toSimplifiedString() {
         return "Student{" +
                 "studentId='" + studentId + '\'' +

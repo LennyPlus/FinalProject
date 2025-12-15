@@ -45,10 +45,8 @@ public class Course {
 
     /**
      * Adds a student to the student list of the course
-     * Adds a new null element to each assignment of this course
-     * Add a new null element for the finalScores
-     * @param student
-     * @return
+     * @param student The student to be added
+     * @return False if the student is already in the course, otherwise true
      */
     public boolean registerStudent(Student student) {
         if(registeredStudents.contains(student)) {
@@ -142,7 +140,10 @@ public class Course {
         System.out.println();
     }
 
-
+    /**
+     * Converts a course to a simple string with only the courseId, courseName, credits, and departmentName
+     * @return
+     */
     public String toSimplifiedString() {
         return "Course{" +
                 "courseId='" + courseId + '\'' +
