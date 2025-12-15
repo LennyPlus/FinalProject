@@ -114,6 +114,9 @@ public class Course {
         }
     }
 
+    /**
+     * Displays the scores of a course in a table, with the assignment averages and student weighted average
+     */
     void displayScores() {
         System.out.printf("Course: %s (%s)\n", courseName, courseId);
 
