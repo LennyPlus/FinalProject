@@ -31,7 +31,7 @@ public class Department {
      * @param departmentName The department name to be checked
      * @return True if the name is valid, otherwise false
      */
-    static boolean isDepartmentNameValid(String departmentName) {
+    public static boolean isDepartmentNameValid(String departmentName) {
         if (departmentName == null) {
             return false;
         }
